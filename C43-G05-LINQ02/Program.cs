@@ -76,7 +76,46 @@ namespace C43_G05_LINQ02
 
 
 
-                #endregion
+            #endregion
+
+            #region Transformation operater
+            //select //selectmany
+            //        fleunt syntax   //
+            //var result = ProductList.Select(p => p);
+            //var result = ProductList.Select(p => p.ProductName);
+            //foreach (var item in result) { Console.WriteLine(item); }
+            //var result = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Seafood")
+            //     .Select(p => new
+            //     {
+            //         p.ProductName,
+            //         p.Category,
+            //         oldprice=p.UnitPrice,
+            //         newprice=p.UnitPrice-p.UnitPrice*0.1m
+            //     });
+            // foreach (var item in result) { Console.WriteLine(item); }
+            //var result=  CustomerList.Select(c => c.CustomerName);
+            //var result=CustomerList.Select(c => c.Orders);
+            // var result=CustomerList.SelectMany(c => c.Orders);
+            //foreach (var item in result) { Console.WriteLine(item); }
+            //query syntax//
+            //var result = from p in ProductList
+            //            select p.ProductName;
+            //foreach (var item in result) { Console.WriteLine(item); }
+            //var result = from p in ProductList
+            //             where p.UnitsInStock > 0 && p.Category == "Seafood"
+            //             select new
+            //             {
+            //                 p.ProductName,
+            //                 p.Category,
+            //                 oldprice = p.UnitPrice,
+            //                 newprice = p.UnitPrice - p.UnitPrice * 0.1m
+            //             };
+            //foreach (var item in result) { Console.WriteLine(item); }
+            //var result = from c in CustomerList
+            //             from o in c.Orders
+            //             select o;
+            //foreach (var item in result) { Console.WriteLine(item); }
+            #endregion
         }
     }
 }
