@@ -116,6 +116,32 @@ namespace C43_G05_LINQ02
             //             select o;
             //foreach (var item in result) { Console.WriteLine(item); }
             #endregion
+
+            #region ordering operator
+
+            //var result = ProductList.OrderBy(p => p.UnitPrice);
+            //var result = ProductList.OrderBy(p => p.UnitPrice).Select(p => new
+            //{
+            //    p.ProductName,
+            //    p.UnitPrice,
+            //    p.UnitsInStock,
+            //});
+            //foreach (  var item in result) { Console.WriteLine(item); }
+
+            //var result = ProductList.OrderByDescending(p => p.UnitPrice).Select(p => new
+            //{
+            //    p.ProductName,
+            //    p.UnitPrice,
+            //    p.UnitsInStock,
+            //});
+            //foreach (var item in result) { Console.WriteLine(item); }
+               //then by 
+            //var result = ProductList.OrderByDescending(p => p.UnitPrice).ThenBy(p => p.ProductID);
+            //foreach (var item in result) { Console.WriteLine(item); }
+
+
+
+            #endregion
         }
     }
 }
