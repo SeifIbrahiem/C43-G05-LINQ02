@@ -217,9 +217,22 @@ namespace C43_G05_LINQ02
             // List<Product>list = ProductList.Where(p=>p.UnitsInStock==0).ToList();
             //Product[] list = ProductList.Where(p => p.UnitsInStock == 0).ToArray();
             //HashSet<Product> list = ProductList.Where(p => p.UnitsInStock == 0).ToHashSet();
-          //  Dictionary<long,Product>list = ProductList.Where(p => p.UnitsInStock == 0).ToDictionary(p => p.ProductID);
-           // foreach (Product item in list) { Console.WriteLine(item); }
+            //  Dictionary<long,Product>list = ProductList.Where(p => p.UnitsInStock == 0).ToDictionary(p => p.ProductID);
+            // foreach (Product item in list) { Console.WriteLine(item); }
             #endregion
+
+            #region generic operation
+            //the only way to call this method as > class member method through "enumerable"class
+            //range //empty //repeat
+            //var result =  Enumerable.Range(1, 100);
+            //var result = Enumerable.Repeat(ProductList[0], 3);
+            //var result = Enumerable.Empty<Product>().ToList();
+            //result.Add(new Product() { ProductName = "product1" });
+            //foreach (var item in result) { Console.WriteLine(item); }
+
+
+            #endregion
+
 
         }
     }
