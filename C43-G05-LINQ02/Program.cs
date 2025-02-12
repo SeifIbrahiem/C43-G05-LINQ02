@@ -178,6 +178,41 @@ namespace C43_G05_LINQ02
 
             #endregion
 
+            #region aggregate operator - imidiate execution
+            //count sum max min avg 
+            //count 
+            //var result = ProductList.Count;
+            // var result = ProductList.Count();
+            //var result = ProductList.Count(p=>p.UnitsInStock == 0);
+            //var result = ProductList.Where (p => p.UnitsInStock == 0).Count();
+            // Console.WriteLine(result);
+
+            //sum 
+            //var result = ProductList.Sum(p => p.UnitsInStock);
+            // var result = ProductList.Sum(p => p.UnitPrice);
+            // Console.WriteLine(result);
+
+            //average 
+            //var result = ProductList.Average(p => p.UnitsInStock);
+            //Console.WriteLine(result);
+
+            //MAX ** MIN 
+
+            //var result = ProductList.Max();
+            //var result1= ProductList.Min();
+            //Console.WriteLine(result);
+            //Console.WriteLine(result1);
+
+            //Aggregate
+            //List<string> Names = new List<string>() { "seif", "ibrahiem", "mohmed", "elslimany" };
+            //var result = Names.Aggregate((so1, so2) => $"{so1}{so2}");
+            //Console.WriteLine(result);
+
+
+
+
+            #endregion
+
         }
     }
 }
