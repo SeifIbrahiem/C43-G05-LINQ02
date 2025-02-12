@@ -135,13 +135,49 @@ namespace C43_G05_LINQ02
             //    p.UnitsInStock,
             //});
             //foreach (var item in result) { Console.WriteLine(item); }
-               //then by 
+            //then by 
             //var result = ProductList.OrderByDescending(p => p.UnitPrice).ThenBy(p => p.ProductID);
             //foreach (var item in result) { Console.WriteLine(item); }
 
 
 
             #endregion
+
+            #region elements operator 
+
+            //elements operator <<>>immediate execution
+
+            //var result =  ProductList.First();
+            // var result1 = ProductList.Last();
+            // Console.WriteLine(result);
+            // Console.WriteLine(result1);
+            //ProductList=new List<Product>();
+            // var result =  ProductList.FirstOrDefault();
+            //var result = ProductList.FirstOrDefault(new Product() { ProductName="defaultproduct"});
+            //var result = ProductList.FirstOrDefault(p=>p.UnitsInStock==0);
+            //var result = ProductList.FirstOrDefault(p => p.UnitsInStock == 0,new Product() { ProductName = "defaultproduct" });
+            // Console.WriteLine(result);
+
+            // var result =  ProductList.LastOrDefault();
+            //var result = ProductList.LastOrDefault(new Product() { ProductName="defaultproduct"});
+            //var result = ProductList.LastOrDefault(p=>p.UnitsInStock==0);
+            //var result = ProductList.LastOrDefault(p => p.UnitsInStock == 0,new Product() { ProductName = "defaultproduct" });
+            // Console.WriteLine(result);
+
+            //var result = ProductList.ElementAt(0);
+            // var result = ProductList.ElementAtOrDefault(0);
+            // Console.WriteLine(result);
+
+            //var result =  ProductList.Single();
+            //Console.WriteLine(result);
+            //ProductList=new List<Product>() { new Product() {ProductName="onlyoneproduct" } };
+            //var result = ProductList.Single();
+            //Console.WriteLine(result);
+            //var result = ProductList.Single(p=>p.UnitsInStock == 1);
+            //Console.WriteLine(result);
+
+            #endregion
+
         }
     }
 }
