@@ -233,6 +233,17 @@ namespace C43_G05_LINQ02
 
             #endregion
 
+            #region setoperator _ union family
+            //union //unionall //interset // expect 
+            //var seqo1 = Enumerable.Range(1, 100);
+            //var seqo2 = Enumerable.Range(50, 100);
+            //var result = seqo1.Union(seqo2);
+            //var result2 = seqo1.Intersect(seqo2);
+            //var result3= seqo1.Except(seqo2);
+            //foreach (var item in result) { Console.WriteLine(item); }
+            //foreach (var item in result2) { Console.WriteLine(item); }
+            //foreach (var item in result3) { Console.WriteLine(result3); }
+            #endregion
 
         }
     }
