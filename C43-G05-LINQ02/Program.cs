@@ -213,6 +213,14 @@ namespace C43_G05_LINQ02
 
             #endregion
 
+            #region castingoperator
+            // List<Product>list = ProductList.Where(p=>p.UnitsInStock==0).ToList();
+            //Product[] list = ProductList.Where(p => p.UnitsInStock == 0).ToArray();
+            //HashSet<Product> list = ProductList.Where(p => p.UnitsInStock == 0).ToHashSet();
+          //  Dictionary<long,Product>list = ProductList.Where(p => p.UnitsInStock == 0).ToDictionary(p => p.ProductID);
+           // foreach (Product item in list) { Console.WriteLine(item); }
+            #endregion
+
         }
     }
 }
