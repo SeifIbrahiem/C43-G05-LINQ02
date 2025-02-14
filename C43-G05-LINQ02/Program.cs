@@ -1,5 +1,6 @@
 ﻿
 using System.Collections;
+using System.Threading.Channels;
 using static C43_G05_LINQ02.ListGenerator;
 namespace C43_G05_LINQ02
 {
@@ -264,7 +265,6 @@ namespace C43_G05_LINQ02
             //containes
             #endregion
 
-
             #region zippingoperator
             //ZIP
             //List<string> Word = new List<string>() { "ten", "twenty", "thirty", "fourty" };
@@ -284,6 +284,39 @@ namespace C43_G05_LINQ02
 
 
             #endregion
+
+            #region partioning operator
+
+            //TAKE TAKELAST SKIP SKIPLAST TAKEWHILE SKIPWHILE
+
+            // var result =ProductList.Take(5);
+            // var result = ProductList.Where(p => p.UnitsInStock == 0).Take(5);
+            //var result = ProductList.Skip(5);
+            //var result = ProductList.Where(p => p.UnitsInStock == 0).SkipLast(5);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //TAKEWHILE ** SKIPWHILE
+            //int[]Numberes = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //var result = Numberes.TakeWhile((N)=>N%3 == 0);
+            //var result1 = Numberes.SkipWhile((N) => N % 3 == 0);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //int[] Numberes = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //var result = Numberes.TakeWhile((N , I) => N > I);
+            //var result1 = Numberes.SkipWhile((N, I) => N > I);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
 
         }
     }
