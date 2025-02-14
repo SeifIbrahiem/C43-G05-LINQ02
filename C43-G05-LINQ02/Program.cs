@@ -1,5 +1,6 @@
 ﻿
 using System.Collections;
+using System.Text.RegularExpressions;
 using System.Threading.Channels;
 using static C43_G05_LINQ02.ListGenerator;
 namespace C43_G05_LINQ02
@@ -314,6 +315,49 @@ namespace C43_G05_LINQ02
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #region INTO IN QUERY SYNTAX
+            //INTO : restart query with introducing new range variable(novolname)
+            //List<string> Names = new List<string>()
+            //{ "ahmed","ali","seif","mona","aya","rana","mohamed","sama"};
+            //var result = Regex.Replace("ahmed", "[aeiou]",string.Empty);
+            //Console.WriteLine(result);
+
+            //var result = from name in Names
+            //             select Regex.Replace("ahmed", "[aeiou]", string.Empty);
+
+            //    foreach (var item in result) 
+
+            //{ 
+            //    Console.WriteLine(item); 
+            //}
+
+            //var result = from name in Names
+            //            select Regex.Replace("ahmed", "[aeiou]", string.Empty)
+            //            into Novolname 
+            //            where Novolname.Length > 3
+            //            select Novolname;
+            //   foreach (var item in result) 
+
+            //{ 
+            //    Console.WriteLine(item); 
+            //}
+
+            //LET
+            //continue query with adding new range variable Novolname
+
+            //var result = from name in Names
+            //         let Novolname = Regex.Replace("ahmed", "[aeiou]", string.Empty)
+            //             select Novolname;
+
+            //foreach (var item in result) 
+
+            //{ 
+            //    Console.WriteLine(item); 
+            //}
+
 
             #endregion
 
